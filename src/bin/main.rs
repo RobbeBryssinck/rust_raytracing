@@ -1,6 +1,6 @@
 use std::{fs::File, io::Write};
 
-use rust_raytracing::{Color, Vec3, utilities::write_color};
+use rust_raytracing::utilities::{Vec3, Color, write_color};
 
 fn main() -> std::io::Result<()> {
     let mut file = File::create("image.ppm")?;
